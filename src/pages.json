@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "path": "pages/list/list",
+      "style": {
+        "navigationBarTitleText": "列表",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/subPack_common",
+      "pages": [
+        {
+          "path": "webview/webview",
+          "style": {
+            "navigationBarBackgroundColor": "#fff"
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/list/list": {
+      "network": "all",
+      "packages": ["pages/subPack_common"]
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
