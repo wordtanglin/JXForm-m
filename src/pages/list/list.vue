@@ -1,5 +1,7 @@
 <template>
     <view class="container">
+        <van-checkbox :value="dataObj.checked" >复选框</van-checkbox>
+
         <view scroll-y="true" class="customer-list" :class="[dataObj.list.length > 0 ? '' : 'width100']"
             scroll-with-animation="true">
             <view class="list-content " v-if="dataObj.list.length > 0">
@@ -39,7 +41,8 @@ import config from "../../common/config";
 
 const dataObj = reactive({
     list: [] as any,
-    categoryName: ''
+    categoryName: '',
+    checked: false,
 })
 
 onLoad(async (option: any) => {
