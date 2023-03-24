@@ -37,6 +37,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
     "@dcloudio/uni-app": "3.0.0-alpha-3061620221230002",
     "@dcloudio/uni-app-plus": "3.0.0-alpha-3061620221230002",
     "@dcloudio/uni-components": "3.0.0-alpha-3061620221230002",
@@ -50,6 +51,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3061620221230002",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3061620221230002",
     "@vitejs/plugin-legacy": "^4.0.1",
+    "moment": "^2.29.4",
     "vant": "^4.0.11",
     "vite-plugin-compress": "^2.1.1",
     "vue": "^3.2.45",

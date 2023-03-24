@@ -1,4 +1,12 @@
 /**
+ * 获取设备信息
+ * @returns
+ */
+export function getDeviceInfo() {
+  return uni.getDeviceInfo()
+}
+
+/**
  * show loading
  * @param title 文字
  */
@@ -187,8 +195,8 @@ function getStatusBarHeight() {
   return uni.getSystemInfoSync().statusBarHeight
 }
 
-
 export default {
+  getDeviceInfo,
   showLoading,
   hideLoading,
   toast,

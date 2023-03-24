@@ -1,35 +1,22 @@
 {
   "pages": [
     {
-      "path": "pages/list/list",
+      "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "列表",
-        "navigationBarBackgroundColor": "#fff"
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/result/result",
+      "style": {
+        "navigationStyle": "custom"
       }
     }
   ],
-  "subPackages": [
-    {
-      "root": "pages/subPack_common",
-      "pages": [
-        {
-          "path": "webview/webview",
-          "style": {
-            "navigationBarBackgroundColor": "#fff"
-          }
-        }
-      ]
-    }
-  ],
-  "preloadRule": {
-    "pages/list/list": {
-      "network": "all",
-      "packages": ["pages/subPack_common"]
-    }
-  },
+
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
+    "navigationBarTitleText": "JX-Form",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8",
     "usingComponents": {

@@ -74,4 +74,13 @@ export default defineConfig({
     //   关闭生成map文件 可以达到缩小打包体积
     sourcemap: false, // 这个生产环境一定要关闭，不然打包的产物会很大
   },
+  // 反向代理
+  server: {
+    host: '0.0.0.0',
+    port: 5566,
+    fs: {
+      strict: false,
+    },
+    proxy: {},
+  },
 })

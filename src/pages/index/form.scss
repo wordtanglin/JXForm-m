@@ -1,0 +1,261 @@
+.jx-form {
+  padding: 40rpx 24rpx;
+}
+
+.jx-form__item {
+  padding-bottom: 50rpx;
+  .jx-item__label {
+    font-size: 28rpx;
+    font-family: PingFang SC-Bold, PingFang SC;
+    font-weight: bold;
+    color: #000000;
+    &--required::before {
+      content: '*';
+      font-size: 26rpx;
+      font-family: PingFang SC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #e10000;
+    }
+  }
+  .item-container {
+    padding-top: 24rpx;
+  }
+}
+
+.jx-checkbox-group,
+.jx-radio-group {
+  .jx-checkbox,
+  .jx-radio {
+    background: #ffffff;
+    border-radius: 6rpx;
+    //border: 1rpx solid #dcdddc;
+    //padding: 19rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24rpx;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &__active {
+      //border: 1rpx solid #4582ff;
+     // background: #f8faff;
+    }
+
+    &__other {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ::v-deep .van-radio__icon,
+    ::v-deep .van-checkbox__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .jx-checkbox__icon,
+    .jx-radio__icon {
+      width: 26rpx;
+      height: 26rpx;
+    }
+
+    .jx-checkbox__label,
+    .jx-radio__label {
+      font-size: 26rpx;
+      font-weight: 400;
+      color: #000000;
+      margin-left: 8rpx;
+    }
+  }
+  
+}
+
+.jx-input-container {
+  position: relative;
+  .jx-input {
+    height: 74rpx;
+    min-height: 74rpx !important;
+    .input-placeholder {
+      font-size: 26rpx;
+      font-weight: 400;
+      color: #c1c1c1;
+      z-index: 99;
+      padding-left: 24rpx;
+    }
+    ::v-deep .uni-input-wrapper {
+      height: 74rpx;
+    }
+    ::v-deep .uni-input-input {
+      height: 74rpx;
+      background: #ffffff;
+      border-radius: 6rpx;
+      border: 1rpx solid #dcdddc;
+      padding-left: 24rpx;
+      font-size: 25rpx;
+      font-weight: 400;
+      color: #000000;
+      width: calc(100% - 26rpx);
+    }
+  }
+
+  .jx-input__hasicon {
+    .input-placeholder {
+      padding-left: 78rpx;
+    }
+    ::v-deep .uni-input-input {
+      padding-left: 78rpx;
+      width: calc(100% - 80rpx);
+    }
+  }
+
+  .jx-input__icon {
+    width: 38rpx;
+    height: 38rpx;
+    position: absolute;
+    left: 24rpx;
+    top: 18rpx;
+    z-index: 9;
+  }
+}
+
+.jx-select-container {
+  position: relative;
+  .jx-input {
+    height: 74rpx;
+    min-height: 74rpx !important;
+    .input-placeholder {
+      font-size: 26rpx;
+      font-weight: 400;
+      color: #c1c1c1;
+      z-index: 99;
+      padding-left: 24rpx;
+    }
+    ::v-deep .uni-input-wrapper {
+      height: 74rpx;
+    }
+    ::v-deep .uni-input-input {
+      height: 74rpx;
+      background: #ffffff;
+      border-radius: 6rpx;
+      border: 1rpx solid #dcdddc;
+      padding-left: 24rpx;
+      font-size: 25rpx;
+      font-weight: 400;
+      color: #000000;
+      width: calc(100% - 26rpx);
+    }
+  }
+
+  .arrow-down-icon {
+    width: 36rpx;
+    height: 36rpx;
+    position: absolute;
+    right: 24rpx;
+  }
+}
+
+.jx-textarea__placeholder {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #c1c1c1;
+  padding-left: 24rpx;
+  padding-top: 24rpx;
+}
+
+.jx-textarea {
+  width: calc(100% - 2rpx);
+  height: 140rpx;
+  background: #ffffff;
+  border-radius: 6rpx;
+  border: 1rpx solid #dcdddc;
+  ::v-deep .uni-textarea-textarea {
+    padding: 24rpx;
+    font-size: 25rpx;
+    font-weight: 400;
+    color: #000000;
+  }
+}
+
+.jx-sex-container {
+  display: flex;
+  view {
+    image {
+      width: 38rpx;
+      height: 38rpx;
+      margin-right: 24rpx;
+    }
+    font-size: 26rpx;
+    font-family: PingFang SC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    background: #fff;
+    border-radius: 37rpx;
+    border: 1rpx solid #dcdddc;
+    padding: 18rpx 24rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:first-child {
+      margin-right: 32rpx;
+    }
+  }
+  .jx-sex__active {
+    border: 1rpx solid #4784fe;
+    background-color: #f8faff;
+  }
+}
+
+.jx-submit__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34rpx;
+
+  .van-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 48rpx);
+    background: #588ffe;
+    border-radius: 6rpx;
+    padding: 22rpx 0;
+    font-size: 26rpx;
+    font-family: PingFang SC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #ffffff;
+  }
+}
+
+
+.jx-other__input {
+    margin-top: 19rpx;
+    margin-bottom: 24rpx;
+    min-height: 74rpx !important;
+    min-width: 606rpx;
+    .input-placeholder {
+      font-size: 26rpx;
+      font-weight: 400;
+      color: #c1c1c1;
+      z-index: 99;
+      padding-left: 12rpx;
+    }
+    ::v-deep .uni-input-wrapper {
+      height: 74rpx;
+    }
+    ::v-deep .uni-input-input {
+      height: 74rpx;
+      background: #ffffff;
+      border-radius: 6rpx;
+      border: 1rpx solid #dcdddc;
+      font-size: 25rpx;
+      font-weight: 400;
+      color: #000000;
+      padding-left: 12rpx;
+      width: calc(100% - 14rpx);
+    }
+  }

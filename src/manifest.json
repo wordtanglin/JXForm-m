@@ -79,5 +79,17 @@
   "uniStatistics": {
     "enable": false
   },
+  "h5": {
+    "router": {
+      "base": "/jx-form/",
+      "mode": "history"
+    },
+    "title": "JXForm",
+    "optimization": {
+      "treeShaking": {
+        "enable": false
+      }
+    }
+  },
   "vueVersion": "3"
 }
