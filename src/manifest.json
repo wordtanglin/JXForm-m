@@ -84,7 +84,7 @@
       "base": "/jx-form/",
       "mode": "history"
     },
-    "title": "JXForm",
+    "title": "JX-Form",
     "optimization": {
       "treeShaking": {
         "enable": false
